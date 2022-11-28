@@ -1,0 +1,821 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#desktop {
+    display: none;
+}
+
+/* NAVIGATION */
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100vh; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #eee; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 27px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    position: relative;
+    left: -70px;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 10px 80px;
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: black !important;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    color: #09c372;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-menu ul a {
+    color: black !important
+}
+
+.desktop-menu ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.desktop-menu ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#login,
+#signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#login {
+    border: 1px solid #498afb;
+}
+
+#signup {
+    border: 1px solid #ff3860;
+}
+
+#signup a {
+    color: #ff3860;
+}
+
+#login a {
+    color: #498afb;
+}
+
+
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    #mySidepanel{
+        display: none;
+    }
+}
+
+
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    width: 70px;
+    height: 30px;
+}
+
+.searchicon {
+    width: 20px;
+    height: 20px;
+}
+
+/* HERO */
+
+.hero img {
+    height: auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.hero h1,
+.hero p,
+.search,
+.course {
+    margin: 20px;
+}
+
+.hero h1,
+.course h1 {
+    font-size: 26px;
+}
+
+.hero p,
+.course p {
+    font-size: 20px;
+}
+
+.search input {
+    padding: 18px;
+    width: 90%;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+}
+
+
+/* SLIDESHOW */
+
+
+/* ACCORDION */
+
+
+.accordion-wrapper {
+    text-align: center;
+    margin: 20px;
+}
+
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-top: none;
+    border-bottom: 1px solid grey;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.accordion span {
+    float: right;
+}
+
+/* CONTAINERS */
+
+.container1 {
+    text-align: center;
+    font-weight: 700;
+    background: #eee;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+.container1 h1 {
+    font-size: 26px;
+}
+
+.container1 p {
+    font-size: 20px !important;
+}
+
+
+/* SECOND SLIDESHOW */
+.splide__slide img {
+    width: 100%;
+    height: auto;
+}
+
+.box1 {
+    display: flex;
+
+    margin: 20px 40px 20px 10px;
+}
+
+.box1 img {
+    width: 150px;
+    height: 150px;
+}
+
+.box1 h2 {
+    font-size: 25px;
+    padding-right: 40px;
+}
+
+.box1 p {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.box1 h6 {
+    font-size: 15px;
+}
+
+.box1 h5 {
+    font-size: 15px;
+}
+
+.box1 h5 span {
+    font-size: 15px;
+    text-decoration: line-through;
+    color: rgb(156, 154, 154);
+}
+
+.box1 button {
+    padding: 5px 10px;
+    background: gold;
+}
+
+.box1 button:hover {
+    padding: 5px 10px;
+    background: rgb(255, 255, 255);
+    color: gold;
+}
+
+
+/* TOP CATEGORIES */
+.container2 {
+    margin: 20px;
+}
+
+.container2 h2 {
+    font-size: 25px;
+}
+
+.container2 button {
+    padding: 13px;
+    margin: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 550;
+    background: transparent;
+}
+
+
+/* FEATURED */
+.container3 {
+    margin: 20px 0px;
+    background: #eee;
+    padding: 20px;
+}
+
+.container3 h2 {
+    font-size: 30px;
+}
+
+.topics-wrapper {
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-start;
+}
+
+.topics-wrapper h3 {
+    font-size: 20px;
+}
+
+.topics1 a,
+.topics1 p,
+.topics2 a,
+.topics2 p {
+    margin: 20px 0px;
+}
+
+.topics1 a,
+.topics2 a {
+    font-size: 16px;
+}
+
+.topics1 p,
+.topics2 p {
+    color: grey;
+    font-size: 13px;
+}
+
+.topics2 {
+    margin-left: 50px;
+}
+
+
+/* SECOND BUTTON */
+
+.search1 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.search1 button {
+    padding: 15px;
+    width: 95%;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* TRUSTED */
+
+.trusted {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.trusted h2 {
+    font-size: 30px;
+}
+
+.trusted p {
+    font-size: 18px;
+}
+
+
+/* BUSINESS */
+
+.container4 {
+    margin: 20px;
+    text-align: center;
+}
+
+.container4 .girlwrap img {
+    width: 100%;
+    height: auto;
+}
+
+.container4 .logowrap img {
+    margin: 20px 0px 10px 0px;
+    width: 50%;
+    height: auto;
+}
+
+.container4 h2 {
+    font-size: 28px;
+}
+
+.container4 li {
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0px;
+}
+
+
+.button-wrapper button {
+    padding: 15px;
+    width: 95%;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.first-btn button {
+    background: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.second-btn button {
+    background: rgb(245, 235, 216);
+
+}
+
+/* INSTRUCTOR */
+.instructor {
+    text-align: center;
+    padding: 10px 25px;
+    margin: 20px 0px;
+}
+
+.instructor img {
+    width: 100%;
+    height: auto;
+}
+
+.instructor h2 {
+    font-size: 25px;
+}
+
+.instructor p {
+    font-size: 20px;
+}
+
+.instructor button {
+    padding: 15px;
+    width: 95%;
+    font-weight: 700;
+    font-size: 17px;
+    background: black;
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: white;
+    padding: 30px;
+}
+
+footer button {
+    border: 1px solid white;
+    padding: 12px 40px;
+    background: transparent;
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+footer li {
+    list-style-type: none;
+    margin: 15px 0px;
+    font-size: 16px;
+}
+
+footer img {
+    width: 70px;
+}
+
+/* MEDIA QUERIES */
+
+/* HERO */
+
+@media screen and (min-width:700px) {
+    .mobile-menu, .logo-wrapper{
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    .hero img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .course {
+        margin: 10px 20px;
+    }
+
+    .tabs-wrapper span {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .tabs-wrapper h2 {
+        list-style-type: none;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 17px;
+        color: rgb(112, 110, 110);
+    }
+
+    .expand {
+        border: 1px solid grey;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .expand h1 {
+        font-size: 30px;
+    }
+
+    .expand p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .expand button {
+        padding: 10px 20px;
+        background: transparent;
+        font-weight: 550;
+        border: 1px solid grey;
+    }
+
+
+    /* COURSES BOX */
+    .course-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .course-box div{
+        width: 25%;
+    }
+
+
+    .course-box img {
+        width: 200px;
+        height: auto;
+    }
+
+    /* LEARN */
+
+    .learn {
+        display: flex;
+        justify-content: space-between;
+        background: #eee;
+        padding: 20px;
+    }
+
+    .learn h2 {
+        font-size: 18px;
+    }
+
+    /* STUDENTS */
+    .student {
+        margin: 20px;
+    }
+
+    .student-course {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .student-course img {
+        width: 300px;
+        height: auto;
+    }
+
+    .student-course h3 {
+        font-size: 20px;
+    }
+
+    .student-course p {
+        color: rgb(151, 150, 150);
+    }
+
+    .student h6 {
+        font-size: 15px;
+        margin: 0px!important;
+    }
+
+    .student h5 {
+        font-size: 17px;
+    }
+
+    .student h5 span {
+        margin: 0px!important;
+        text-decoration: line-through;
+        color: rgb(151, 150, 150);
+    }
+
+    /* CATEGORIES */
+
+    .categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .categories div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categories img {
+        width: 200px;
+        height: auto;
+    }
+
+    .categories p {
+        margin-left: 30px;
+    }
+
+    /* FEATURED */
+
+    .featured {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search1 {
+        text-align: left;
+    }
+
+    .search1 button {
+        width: 15%;
+        height: auto;
+        font-size: 12px;
+        padding: 10px;
+        font-weight: 550;
+    }
+
+
+    /* TRUSTED */
+/* .trusted{
+    display: flex;
+    flex-direction: r;
+    justify-content: space-around;
+} */
+    .trusted h2 {
+        font-size: 30px;
+    }
+
+    .team {
+        margin: 30px 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* BUSINESS */
+
+    .container4 {
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container4 .girlwrap img {
+        width: 50%;
+        height: auto;
+    }
+
+    .container4 .logowrap img {
+        width: 20%;
+        height: auto;
+    }
+
+    .container4 h2 {
+        font-size: 32px;
+    }
+
+    .container4 li {
+        font-size: 20px;
+        text-align: left;
+        padding: 15px 0px;
+    }
+
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-wrapper button {
+        padding: 15px;
+        width: 400px;
+        flex-wrap: wrap;
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    .first-btn button {
+        background: black;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .second-btn button {
+        background: rgb(245, 235, 216);
+
+    }
+
+    /* INSTRUCTOR */
+    .instructor {
+        text-align: center;
+        padding: 30px 100px;
+        margin: 20px 0px;
+    }
+
+    .instructor img {
+        width: 50%;
+        height: auto;
+    }
+
+    .instructor h2 {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .instructor p {
+        font-size: 20px;
+    }
+
+    .instructor button {
+        padding: 15px;
+        width: 35%;
+        font-weight: 700;
+        font-size: 17px;
+        background: black;
+        color: white;
+    }
+
+    /* FOOTER */
+
+    .footer-wrapper,
+    .footer-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logo img {
+        width: 70px;
+    }
+
+}

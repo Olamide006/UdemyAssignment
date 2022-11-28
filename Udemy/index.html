@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="desktop-menu">
+          <ul>
+            <img class="logo" src="./images/logo-udemy.svg" alt="" />
+            <img class="searchicon" src="./images/search-512.webp" alt="" />
+            <li><a href="/products">Categories</a></li>
+            <input type="text" />
+            <li><a href="/about">Teach on Udemy</a></li>
+            <li id="login"><a href="/login">Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+     
+ 
+          <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+              <li id="login"><a href="/login">Login</a></li>
+              <li id="signup"><a href="/signup">Signup</a></li>
+              <li><a href="/home">Web Development</a></li>
+              <li><a href="/products">Mobile Development</a></li>
+              <li><a href="/about">Game Development</a></li>
+              <li><a href="/home">Entrepreneurship</a></li>
+              <li><a href="/products">Business Analytics & Intelligence</a></li>
+              <li><a href="/about">Digital Marketing</a></li>
+              <li><a href="/home">Graphic Design & Illustration</a></li>
+              <li><a href="/products"> IT Certifications </a></li>
+              <li><a href="/about"> All categories</a></li>
+              <hr />
+              <p>More from Udemy</p>
+              <li><a href="/home">Udemy Business</a></li>
+              <li><a href="/products">Get the app</a></li>
+              <li><a href="/about">Invie friends</a></li>
+              <li><a href="/about">Help</a></li>
+              <button>English</button>
+            </ul>
+          </div>
+          
+          <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+      
+        </div>
+<div class="logo-wrapper">
+  <img class="logo" src="./images/logo-udemy.svg" alt="" />
+  <img class="searchicon" src="./images/search-512.webp" alt="" />
+</div>
+      </div>
+    
+    </header>
+
+    <!-- hero -->
+
+    <section id="mobile">
+      <div class="hero">
+        <img class="heroimg" src="./images/heroo.jpg" alt="" />
+        <h1>Learning that gets you</h1>
+        <p>Sills for your present(and your future). Get started today.</p>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="What do you want to learn?" />
+      </div>
+
+      <div class="course">
+        <h1>A broad selection of courses</h1>
+        <p>
+          Choose from 213,000 online video courses with new additions published
+          every month
+        </p>
+      </div>
+
+      <!-- SLIDESHOW -->
+
+      <!-- ACCORDION -->
+
+      <section class="accordion-wrapper">
+        <button class="accordion">Excel<span>+</span></button>
+        <div class="panel">hello</div>
+
+        <button class="accordion">Web Development<span>+</span></button>
+        <div class="panel"></div>
+
+        <button class="accordion">JavaScript<span>+</span></button>
+        <div class="panel"></div>
+
+        <button class="accordion">Data Science<span>+</span></button>
+        <div class="panel">
+          <!-- <section
+            id="image-carousel"
+            class="splide"
+            aria-label="images"
+          >
+            <div class="splide__track">
+              <div class="splide__list">
+  
+                <div class="splide__slide">
+  
+                  <div class="accord-box">
+                    <img src="/images/instructor-mobile-v3.jpg" alt="courses" />
+                    <h2>microsoft excel</h2>
+                    <p>Infinite skills</p>
+                    <h6>4.4</h6>
+                    <h5>#2,500 <span>#10500</span></h5>
+                  </div>
+                </div>
+  
+                <div class="splide__slide">
+  
+                  <div class="accord-box">
+                    <img src="/images/instructor-mobile-v3.jpg" alt="courses" />
+                    <h2>microsoft excel</h2>
+                    <p>Infinite skills</p>
+                    <h6>4.4</h6>
+                    <h5>#2,500 <span>#10500</span></h5>
+                  </div>
+                </div>
+  
+                <div class="splide__slide">
+  
+                  <div class="accord-box">
+                    <img src="/images/instructor-mobile-v3.jpg" alt="courses" />
+                    <h2>microsoft excel</h2>
+                    <p>Infinite skills</p>
+                    <h6>4.4</h6>
+                    <h5>#2,500 <span>#10500</span></h5>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </section> -->
+        </div>
+
+        <button class="accordion">AWS Cerification<span>+</span></button>
+        <div class="panel"></div>
+
+        <button class="accordion">Drawing<span>+</span></button>
+        <div class="panel"></div>
+      </section>
+
+      <!-- why learn -->
+      <section class="container1">
+        <h1>Why Learn on Udemy?</h1>
+
+        <p>Learn in-demand skills with over 213,000 video courses</p>
+        <p>Choose courses taught by real-world experts</p>
+        <p>
+          Learn at your own pace, with lifetime access on mobile and desktop
+        </p>
+      </section>
+
+      <!-- second slideshow -->
+      <h2 class="student">Students are viewing</h2>
+      <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <div class="splide__list">
+            <!-- SLIDE 1 -->
+            <div class="splide__slide">
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>The complete 2023 Web Development...</h2>
+                  <p>dr angela yu</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>100 Days of code:The complete Python Pr...</h2>
+                  <p>dr angela yu</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>The Complete JavaScript Course...</h2>
+                  <p>dr angela</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+            </div>
+            <!-- END OF SLIDE 1 -->
+
+            <!-- SLIDE 2 -->
+            <div class="splide__slide">
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>The complete 2023 Web Development...</h2>
+                  <p>dr angela yu</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>100 Days of code:The complete Python Pr...</h2>
+                  <p>dr angela yu</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>The Complete JavaScript Course...</h2>
+                  <p>dr angela</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+            </div>
+            <!-- END OF SLIDE 2 -->
+
+            <!-- SLIDE 3 -->
+            <div class="splide__slide">
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>The complete 2023 Web Development...</h2>
+                  <p>dr angela yu</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>100 Days of code:The complete Python Pr...</h2>
+                  <p>dr angela yu</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+
+              <div class="box1">
+                <img src="images/instructor-mobile-v3.jpg" alt="course" />
+                <div>
+                  <h2>The Complete JavaScript Course...</h2>
+                  <p>dr angela</p>
+                  <h6>4.7 star</h6>
+                  <p>(240,033)</p>
+                  <h5>#3,900 <span>#34,900</span></h5>
+                  <button>Bestseller</button>
+                </div>
+              </div>
+            </div>
+            <!-- END OF SLIDE 13 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- top categories -->
+      <section class="container2">
+        <h2>Top categories</h2>
+
+        <button class="button1">Design</button>
+        <button class="button2">Development</button>
+        <br />
+        <button class="button3">Marketing</button>
+        <button class="button4">IT and Software</button>
+        <br />
+        <button class="button5">Personal Development</button>
+        <button class="button6">Business</button>
+        <br />
+        <button class="button7">Photography</button>
+        <button class="button8">Music</button>
+      </section>
+
+      <!-- FEATURED TOPICS -->
+      <section class="container3">
+        <h2>Featured topics by category</h2>
+        <div class="topics-wrapper">
+          <div class="topics1">
+            <h3>Development</h3>
+            <a href=""> Python </a>
+            <p>36,354,994 students</p>
+            <a href=""> Web Development </a>
+            <p>11,415,615 students</p>
+            <a href="">Machine Learning</a>
+            <p>70,070,015 students</p>
+
+            <h3>IT and Software</h3>
+            <a href=""> Aws Certification </a>
+            <p>6,078,244 students</p>
+
+            <a href=""> Ethical Hacking</a>
+            <p>10,931,006 students</p>
+
+            <a href="">Cyber Security </a>
+            <p>3,998,037 students</p>
+          </div>
+
+          <div class="topics2">
+            <h3>Business</h3>
+            <a href="">Financial Analysis</a>
+            <p>1,195,282 students</p>
+            <a href=""> SQL</a>
+            <p>5,977,561 students</p>
+            <a href="">PMP</a>
+            <p>1,733,398 students</p>
+
+            <h3>Design</h3>
+            <a href=""> Photoshop</a>
+            <p>10,909,736 students</p>
+            <a href="">Ethical Hacking</a>
+            <p>3,381,052 students</p>
+            <a href="">Cyber Security</a>
+            <p>2,410,849 students</p>
+          </div>
+        </div>
+
+        <!-- SECOND BUTTON -->
+
+        <div class="search1">
+          <button>Explore more topics</button>
+        </div>
+      </section>
+
+      <!-- TRUSTED -->
+      <section class="trusted">
+        <h2>Trusted by over 13,400 great teams</h2>
+        <p>
+          Leading companies use the same courses to help employees keep their
+          skills fresh.
+        </p>
+      </section>
+
+      <!-- BUSINESS -->
+      <section class="container4">
+        <div class="girlwrap">
+          <img class="girl" src="./images/UB_Promo_800x800.jpg" alt="" />
+        </div>
+        <div class="logowrap">
+          <img class="logo" src="./images/logo-ub.svg" alt="" />
+        </div>
+
+        <div>
+          <h2>Upskill you team with Udemy Business</h2>
+          <ul>
+            <li>
+              Unlimited access to 19,000+ top Udemy courses, anytime, anywhere
+            </li>
+            <li>International course collection in 14 languages</li>
+            <li>Top Certification in tech and business</li>
+          </ul>
+        </div>
+
+        <div class="button-wrapper">
+          <div class="first-btn">
+            <button class="btn2">Get Udemy Business</button>
+          </div>
+          <div class="second-btn"><button class="btn3">Learn more</button></div>
+        </div>
+      </section>
+
+      <!-- instructor -->
+      <section class="instructor">
+        <img src="images/instructor-mobile-v3.jpg" alt="" />
+        <h2>Become an instructor</h2>
+        <p>
+          Instructors from around the world teach millions of students on Udemy.
+          We provide the tools and skills to teach what you love.
+        </p>
+        <button>Start teaching today</button>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <button>English</button>
+
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Careers</li>
+        <li>Investores</li>
+        <li>Priacy Policy</li>
+        <li>Cookie settings</li>
+        <li>Blog</li>
+        <li>Sitemap</li>
+        <li>Get the app</li>
+        <li>Accessibility statement</li>
+
+        <img src="images/udemy-white.svg" alt="logo" />
+        <p>&copy; 2022 Udemy,Inc.</p>
+      </footer>
+    </section>
+
+    <!-- DESKTOP -->
+
+    <section id="desktop">
+      <div class="hero">
+        <img class="heroimg" src="./images/heroo.jpg" alt="" />
+      </div>
+
+      <div class="course">
+        <h1>A broad selection of courses</h1>
+        <p>
+          Choose from 213,000 online video courses with new additions published
+          every month
+        </p>
+      </div>
+
+      <!-- SLIDESHOW -->
+
+      <!-- ACCORDION -->
+
+      <section class="tabs-wrapper">
+        <span>
+          <h2>Python</h2>
+          <h2>Excel</h2>
+          <h2>Web Development</h2>
+          <h2>JavaScript</h2>
+          <h2>Data Science</h2>
+          <h2>AWS Certification</h2>
+          <h2>Drawing</h2>
+        </span>
+
+        <div class="expand">
+          <h1>Expand your career opportunities with Python</h1>
+          <p>
+            Expand your career opportunities with Python Take one of Udemy’s
+            range of Python courses and learn how to code using this incredibly
+            useful language. Its simple syntax and readability makes Python
+            perfect for Flask, Django, data science, and machine learning.
+            You’ll learn how to build everything from games to sites to apps.
+            Choose from a range of courses that will appeal to
+          </p>
+          <button>Explore Python</button>
+
+          <div class="course-box">
+            <div>
+              <img src="images/course1.jpg" alt="course" />
+              <h3>Learn Python:The Complete Python Programming Course</h3>
+              <p>avinash jain, The Codex</p>
+              <h6>4.3</h6>
+              <h5>#3,200 <span>#14,900</span></h5>
+            </div>
+            <div>
+              <img src="images/course2.jpg" alt="course" />
+              <h3>Learn Python for Data Analysis and Visualization</h3>
+              <p>Jose Portilla</p>
+              <h6>4.3</h6>
+              <h5>#3,200 <span>#14,900</span></h5>
+            </div>
+            <div>
+              <img src="images/course3.jpg" alt="course" />
+              <h3>Python for Beginners-Learn Programming from scratch</h3>
+              <p>Edwin Diaz,Coding Faculty Solutions</p>
+              <h6>4.3</h6>
+              <h5>#3,200 <span>#14,900</span></h5>
+            </div>
+
+            <div>
+              <img src="images/course1.jpg" alt="course" />
+              <h3>Learn Python:The Complete Python Programming Course</h3>
+              <p>avinash jain, The Codex</p>
+              <h6>4.3</h6>
+              <h5>#3,200 <span>#14,900</span></h5>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- LEARN -->
+
+      <section class="learn">
+        <div>
+          <img src="" alt="" />
+          <h2>Learn in-demand skills with over 213,000 video courses</h2>
+        </div>
+
+        <div>
+          <img src="" alt="" />
+          <h2>Choose courses taught by real-world experts</h2>
+        </div>
+
+        <div>
+          <img src="" alt="" />
+          <h2>
+            Learn at your own pace, with lifetime access on mobile and desktop
+          </h2>
+        </div>
+      </section>
+
+      <!-- STUDENTS -->
+
+      <section class="student">
+        <h2>Students are viewing</h2>
+        <div class="student-course">
+          <div>
+            <img src="images/course4.webp" alt="courses" />
+            <h3>Learn Python:The Com</h3>
+            <p>avinash jain</p>
+            <h6>4.3</h6>
+            <h5>#3,200 <span>#14,900</span></h5>
+          </div>
+          <div>
+            <img src="images/course5.jpg" alt="courses" />
+            <h3>Learn Python:The Com</h3>
+            <p>avinash jain</p>
+            <h6>4.3</h6>
+            <h5>#3,200 <span>#14,900</span></h5>
+          </div>
+          <div>
+            <img src="images/course6.jpg" alt="courses" />
+            <h3>Learn Python:The Com</h3>
+            <p>avinash jain</p>
+            <h6>4.3</h6>
+            <h5>#3,200 <span>#14,900</span></h5>
+          </div>
+          <div>
+            <img src="images/course4.webp" alt="courses" />
+            <h3>Learn Python:The Com</h3>
+            <p>avinash jain</p>
+            <h6>4.3</h6>
+            <h5>#3,200 <span>#14,900</span></h5>
+          </div>
+        </div>
+      </section>
+
+      <!-- top categories -->
+      <!-- <section class="container2">
+        <h2>Top categories</h2>
+
+        <div class="categories">
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>Design</p>
+          </div>
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>Development</p>
+          </div>
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>Marketing</p>
+          </div>
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>IT and Software</p>
+          </div>
+        </div>
+
+        <div class="categories">
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>Personal Development</p>
+          </div>
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>Business</p>
+          </div>
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>Photography</p>
+          </div>
+          <div>
+            <img src="images/instructor-mobile-v3.jpg" alt="categories" />
+            <p>Music</p>
+          </div>
+        </div> 
+
+      
+      </section>-->
+
+      <!-- FEATURED TOPICS -->
+      <section class="container3">
+        <h2>Featured topics by category</h2>
+
+        <div class="featured">
+          <div>
+            <h3>Development</h3>
+            <a href=""> Python </a>
+            <p>36,354,994 students</p>
+            <a href=""> Web Development </a>
+            <p>11,415,615 students</p>
+            <a href="">Machine Learning</a>
+            <p>70,070,015 students</p>
+          </div>
+
+          <div>
+            <h3>IT and Software</h3>
+            <a href=""> Aws Certification </a>
+            <p>6,078,244 students</p>
+
+            <a href=""> Ethical Hacking</a>
+            <p>10,931,006 students</p>
+
+            <a href="">Cyber Security </a>
+            <p>3,998,037 students</p>
+          </div>
+          <div>
+            <h3>Business</h3>
+            <a href="">Financial Analysis</a>
+            <p>1,195,282 students</p>
+            <a href=""> SQL</a>
+            <p>5,977,561 students</p>
+            <a href="">PMP</a>
+            <p>1,733,398 students</p>
+          </div>
+
+          <div>
+            <h3>Design</h3>
+            <a href=""> Photoshop</a>
+            <p>10,909,736 students</p>
+            <a href="">Ethical Hacking</a>
+            <p>3,381,052 students</p>
+            <a href="">Cyber Security</a>
+            <p>2,410,849 students</p>
+          </div>
+        </div>
+
+        <!-- SECOND BUTTON -->
+
+        <div class="search1">
+          <button>Explore more topics</button>
+        </div>
+      </section>
+
+      <!-- TRUSTED -->
+      <section class="trusted">
+        <h2>Trusted by over 13,400 great teams</h2>
+        <p>
+          Leading companies use the same courses to help employees keep their
+          skills fresh.
+        </p>
+        <div class="team">
+        <img src = "images/team1.svg" alt = "team"/>
+        <img src = "images/team2.svg" alt = "team"/>
+        <img src = "images/team3.svg" alt = "team"/>
+        <img src = "images/team4.svg" alt = "team"/>
+        <img src = "images/team5.svg" alt = "team"/>
+        <img src = "images/team6.svg" alt = "team"/>
+        </div>
+      </section>
+
+      <!-- BUSINESS -->
+      <section class="container4">
+        <div class="girlwrap">
+          <img class="girl" src="./images/UB_Promo_800x800.jpg" alt="" />
+        </div>
+        <div class="logowrap">
+          <img class="logo" src="./images/logo-ub.svg" alt="" />
+        </div>
+
+        <div>
+          <h2>Upskill you team with Udemy Business</h2>
+          <ul>
+            <li>
+              Unlimited access to 19,000+ top Udemy courses, anytime, anywhere
+            </li>
+            <li>International course collection in 14 languages</li>
+            <li>Top Certification in tech and business</li>
+          </ul>
+        </div>
+
+        <div class="button-wrapper">
+          <div class="first-btn">
+            <button class="btn2">Get Udemy Business</button>
+          </div>
+          <div class="second-btn"><button class="btn3">Learn more</button></div>
+        </div>
+      </section>
+
+      <!-- instructor -->
+      <section class="instructor">
+        <img src="images/instructor-mobile-v3.jpg" alt="" />
+        <h2>Become an instructor</h2>
+        <p>
+          Instructors from around the world teach millions of students on Udemy.
+          We provide the tools and skills to teach what you love.
+        </p>
+        <button>Start teaching today</button>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-wrapper">
+          <div>
+            <li>Udemy Business</li>
+            <li>Teach on Udemy</li>
+            <li>Get the app</li>
+            <li>About us</li>
+            <li>Contact us</li>
+          </div>
+
+          <div>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>Help and Support</li>
+            <li>Affiliate</li>
+            <li>Investors</li>
+          </div>
+
+          <div>
+            <li>Terms</li>
+            <li>Privacy policy</li>
+            <li>Cookie settings</li>
+            <li>Sitemap</li>
+            <li>Accessibility statement</li>
+          </div>
+
+          <button>English</button>
+        </div>
+
+        <!-- <li>About us</li>
+    <li>Contact us</li>
+    <li>Careers</li>
+    <li>Investores</li>
+    <li>Priacy Policy</li>
+    <li>Cookie settings</li>
+    <li>Blog</li>
+    <li>Sitemap</li>
+    <li>Get the app</li>
+    <li>Accessibility statement</li> -->
+
+        <div class="footer-logo">
+          <img src="images/udemy-white.svg" alt="logo" />
+          <p>&copy; 2022 Udemy,Inc.</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="me.js"></script>
+</html>
